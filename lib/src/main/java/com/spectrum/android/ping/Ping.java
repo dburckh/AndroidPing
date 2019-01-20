@@ -54,7 +54,18 @@ public class Ping implements Runnable {
     private Network mNetwork;
 
     public interface PingListener {
-        void onPing(long timeMs, int count);
+        /**
+         * Callback for ping
+         * @param timeMs time in ms for ping to return or @see Ping.TIMED_OUT_MS in case of timeout
+         * @param index index of the current ping
+         */
+        void onPing(long timeMs, int index);
+
+        /**
+         * Ping critical failure
+         * @param e
+         * @param count
+         */
         void onPingException(Exception e, int count);
     }
 
