@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="8dp">
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_below="@id/addressLabel"
+        android:text="google.com"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/wifi"
+        android:layout_below="@id/address"
+        android:text="@string/wifi_only"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/resultsLabel"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/results"/>
+    <TextView
+        android:id="@+id/log"
+        android:layout_below="@id/resultsLabel"
+        android:layout_above="@id/ping"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/ping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ping"/>
+</RelativeLayout>

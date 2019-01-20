@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Ping</string>
+    <string name="address">Address:</string>
+    <string name="wifi_only">WiFi Only</string>
+    <string name="results">Results:</string>
+    <string name="ping">Ping</string>
+</resources>
