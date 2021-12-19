@@ -2,6 +2,10 @@
     <string name="app_name">Android Ping</string>
     <string name="address">Address:</string>
     <string name="wifi_only">WiFi Only</string>
+    <string name="defaultIp">Default</string>
+    <string name="ipv6">IPv6</string>
+    <string name="ipv4">IPv4</string>
     <string name="results">Results:</string>
     <string name="ping">Ping</string>
+    <string name="ipVersion">IP Version</string>
 </resources>

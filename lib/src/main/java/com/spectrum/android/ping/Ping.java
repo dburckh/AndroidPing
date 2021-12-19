@@ -71,7 +71,7 @@ public class Ping implements Runnable {
 
     /**
      *
-     * @param dest Should work with Inet6Address, but multiple addresses are failing
+     * @param dest Can be of type <code>Inet6Address</code> or <code>Inet4Address</code>
      * @param listener
      */
     public Ping(final InetAddress dest, final PingListener listener) {
@@ -154,7 +154,7 @@ public class Ping implements Runnable {
                     final StructPollfd[] structPollfds = {structPollfd};
                     for (int i = 0; i < mCount; i++) {
                         final ByteBuffer byteBuffer = mEchoPacketBuilder.build();
-                        final byte buffer[] = new byte[byteBuffer.limit()];
+                        final byte[] buffer = new byte[byteBuffer.limit()];
 
                         try {
                             // Note: it appears that the OS updates the Checksum, Identifier, and Sequence number.  The payload appears to be untouched.
