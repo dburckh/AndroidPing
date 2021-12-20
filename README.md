@@ -7,6 +7,7 @@ Implementation notes:
 1. Listener is executed on calling Thread (Not UI Thread).
 2. Requires Lollipop or greater.
 3. As always, don't do I/O on the UI Thread.
+4. Does NOT appear to work with the emulator, make sure you use a real device.
 
 ## Sample Usage
 See the MainActivity for more.
